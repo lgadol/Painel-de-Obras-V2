@@ -1,0 +1,138 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+header.header-top {
+    background-color: rgb(28, 61, 133);
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+header.header-top h1 {
+    font-size: 1.8em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header.header-top i {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 726px) {
+    header a:hover {
+        padding: 10px;
+        background: linear-gradient(135deg, rgb(86, 126, 211) 0%, rgb(28, 61, 133) 100%);
+        border-radius: 2px;
+    }
+
+}
+
+.header-top a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.logo {
+    position: absolute;
+    left: 15px;
+    height: auto;
+}
+
+/* Botão usuário */
+.fa-sign-in,
+.fa-home {
+    font-size: 1.5em !important;
+    width: 100px !important;
+    height: 20px !important;
+    float: right !important;
+    display: flex !important;
+    align-items: end !important;
+    position: absolute !important;
+    bottom: 5px !important;
+    background-color: rgb(28, 61, 133);
+    border: none;
+    color: white;
+}
+
+.fa-arrows-alt,
+.fa-compress {
+    font-size: 1.3em !important;
+    width: 100px !important;
+    height: 20px !important;
+    float: right !important;
+    display: flex !important;
+    align-items: end !important;
+    position: absolute !important;
+    bottom: 5px !important;
+    right: 15px !important;
+    background-color: rgb(28, 61, 133);
+    border: none;
+    color: white;
+}
+
+.fa-sign-in {
+    right: -50px;
+}
+
+.fa-home {
+    right: -15px !important;
+}
+
+button:hover {
+    color: lightblue;
+}
+
+@media (max-width: 725px) {
+    .header-top {
+        display: block !important;
+    }
+
+    .logo {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* @media (max-width: 700px) {
+    .header {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+} */
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 20px !important;
+        padding: none !important;
+    }
+}
+
+@media (max-width: 245px) {
+    .logo {
+        width: 80% !important;
+        height: 40% !important;
+    }
+
+    .fa-sign-in,
+    .fa-home {
+        font-size: 15px !important;
+    }
+
+    .fa-sign-in {
+        right: -65px !important;
+    }
+
+    .fa-home {
+        right: -45px !important;
+    }
+}

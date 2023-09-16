@@ -1,0 +1,21 @@
+.progress-bar {
+  font-size: 12px;
+  width: 100px;
+  height: 20px;
+  background-color: #bebebe;
+  color: white;
+  margin-bottom: 3px;
+  position: relative;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  background-color: rgb(28, 61, 133);
+}
+
+.progress-bar span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
