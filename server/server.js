@@ -6,16 +6,16 @@ const { createConnection } = require('mysql');
 app.use(cors());
 
 const painelDeObras2CONN = createConnection({
-  host: '10.54.0.136',
-  user: 'pedro',
-  password: 'pedro',
+  host: '',
+  user: '',
+  password: '',
   database: 'painel_de_obras2'
 });
 
 const comumCONN = createConnection({
-  host: '10.54.0.136',
-  user: 'pedro',
-  password: 'pedro',
+  host: '',
+  user: '',
+  password: '',
   database: 'comum'
 });
 
